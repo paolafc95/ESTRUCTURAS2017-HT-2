@@ -14,8 +14,8 @@ public class Cola{
 
     public Nodo deQueue(){
         Nodo temporal= estructura.ObtenerCabeza();
-        estructura.EliminarNodo();
 
+        estructura.EliminarNodo();
         return temporal;
     }
 
