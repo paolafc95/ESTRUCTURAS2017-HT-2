@@ -17,8 +17,6 @@ public class Lector{
 		/*obtiene el archivo*/
         Interpreter interpretador= new Interpreter();
         String archivo= "datos.txt";
-        String[] resultados;
-        int contador=0;
         try {
             File data = new File(archivo);
             FileReader fileReader = new FileReader(data);
@@ -27,16 +25,13 @@ public class Lector{
             String linea;
             while ((linea = bufferedReader.readLine()) != null) {
                 cola.enQueue(linea);
-                contador++
-            }
-            resultados=new String[contador];
-
-
             }
             fileReader.close();
             System.out.println("Se ha terminado de leer el archivo "+archivo);
-            System.out.println(interpretador.Read(cola.deQueue()));
+            while(interpretador.Read(cola.deQueue()) != null){
+                String valor = interpretador.Read(cola.deQueue());
 
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
