@@ -41,8 +41,13 @@ public class Lista {
     }
     public Nodo EliminarNodo()
     {
-        Nodo NodoADevolver = Cabeza; 
-        Cabeza = Cabeza.getSiguiente();
+        Nodo NodoADevolver = Cabeza;
+        try{
+            Cabeza = Cabeza.getSiguiente();
+        }catch (Exception e){
+            return NodoADevolver;
+        }
+
         return NodoADevolver;
     
     }
