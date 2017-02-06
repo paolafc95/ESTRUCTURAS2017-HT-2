@@ -1,12 +1,20 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+import java.util.*;
+>>>>>>> 0f24fb3aca9f42735c29ddda1fcd36d02e8dce92
 /*
 Autor: Byron Andrés Mota Hernandez, 15246
 	   Paola Fuentes Caro, 151126
 Este se encarga de analizar y ejecutar el proceso de interpretar archivos postfix	   */
 	   
+<<<<<<< HEAD
 =======
 import java.util.*;
 >>>>>>> 922f56531cbd70c431718bada2f37c70c8267fed
+=======
+
+>>>>>>> 0f24fb3aca9f42735c29ddda1fcd36d02e8dce92
 public class Interpreter{
 
     public String Read(Nodo nodo){
