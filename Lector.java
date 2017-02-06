@@ -1,3 +1,9 @@
+/*
+Autor: Byron Andrés Mota Hernandez, 15246
+	   Paola Fuentes Caro, 151126
+Se encarga de recibir el archivo e instancia Cola para que se encargue de crear los nodos, segun las lineas que contenga el archivo.
+Tambien tiene una funcion de Main*/
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -7,7 +13,9 @@ public class Lector{
 //se trabajaron pilas y colas en simultaneo para puntos extra ;)
     public static void main(String[] arg){
         //cola donde van almacenados los string del archivo
+
         Cola cola= new Cola();
+		/*obtiene el archivo*/
         Interpreter interpretador= new Interpreter();
         String archivo= "datos.txt";
         try {
@@ -28,7 +36,7 @@ public class Lector{
             fileReader.close();
             System.out.println("Se ha terminado de leer el archivo "+archivo);
             int j=0;
-            System.out.println("Cantidad de líneas leídas: "contador);
+            System.out.println("Cantidad de lineas leidas: "+contador);
             while(j<contador){
                 //se saca el registro de la cola
                 String temporal =interpretador.Read(cola.deQueue());

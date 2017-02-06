@@ -1,4 +1,7 @@
-
+/*
+Autor: Byron Andrés Mota Hernandez, 15246
+	   Paola Fuentes Caro, 151126 
+Se va a encargar de almacenar los nodos creados, por cada linea del texto, en una lista	   */
 
 public class Cola{
 
