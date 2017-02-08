@@ -12,16 +12,10 @@ import java.io.IOException;
 public class Lector{
 //se trabajaron pilas y colas en simultaneo para puntos extra ;)
     public static void main(String[] arg){
-<<<<<<< HEAD
-<<<<<<< HEAD
-		
-=======
+
         //cola donde van almacenados los string del archivo
->>>>>>> 922f56531cbd70c431718bada2f37c70c8267fed
-=======
         //cola donde van almacenados los string del archivo
 
->>>>>>> 0f24fb3aca9f42735c29ddda1fcd36d02e8dce92
         Cola cola= new Cola();
 		/*obtiene el archivo*/
         Interpreter interpretador= new Interpreter();
@@ -48,6 +42,7 @@ public class Lector{
             while(j<contador){
                 //se saca el registro de la cola
                 String temporal =interpretador.Read(cola.deQueue());
+                System.out.println(temporal);
                 //se interpreta el archivo de la cola
                 int result= interpretador.Analize(temporal);
                 j++;
